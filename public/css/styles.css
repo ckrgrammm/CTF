@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.map-image {
+    width: 1000px; /* Fixed width as per your requirement */
+    height: auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Modals are 50% of window width */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.red-dot {
+    width: 10px; /* Size of the dot */
+    height: 10px; /* Size of the dot */
+    background-color: red; /* Red color */
+    border-radius: 50%; /* Makes it circular */
+    position: absolute; /* Position it anywhere inside the modal */
+    top: 20px; /* Distance from the top of the modal-content */
+    left: 20px; /* Distance from the left of the modal-content */
+}
