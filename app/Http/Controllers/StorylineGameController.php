@@ -16,4 +16,11 @@ class StorylineGameController extends Controller
             // 'locations' => $locations,
         ]);
     }
+
+    public function play()
+    {
+        // You can fetch data here and pass it to the view if needed
+        // For now, we'll just return the 'play' view
+        return view('play');
+    }
 }

@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 
 
+Route::get('/play', [StorylineGameController::class, 'play'])->name('play');
+
 
 // Route for the main page of the storyline game using a controller
 Route::get('/storyline-game', [StorylineGameController::class, 'index']);
